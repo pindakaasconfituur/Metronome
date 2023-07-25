@@ -11,7 +11,6 @@
 		E719DE722A69893D00E2029F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719DE712A69893D00E2029F /* ContentView.swift */; };
 		E719DE742A69893D00E2029F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E719DE732A69893D00E2029F /* Assets.xcassets */; };
 		E719DE772A69893D00E2029F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E719DE762A69893D00E2029F /* Preview Assets.xcassets */; };
-		E7381E8B2A6EBD1B005008A7 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */; };
 		E7381E972A6ED8E3005008A7 /* trimmedmetronomesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */; };
 		E7E65B232A704C3D005DDACC /* metronome_tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7E65B222A704C3D005DDACC /* metronome_tick.wav */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		E719DE712A69893D00E2029F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E719DE732A69893D00E2029F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E719DE762A69893D00E2029F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
 		E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trimmedmetronomesound.mp3; sourceTree = "<group>"; };
 		E7E65B222A704C3D005DDACC /* metronome_tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome_tick.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +58,6 @@
 				E7E65B222A704C3D005DDACC /* metronome_tick.wav */,
 				E719DE6F2A69893D00E2029F /* MetronomeApp.swift */,
 				E719DE712A69893D00E2029F /* ContentView.swift */,
-				E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */,
 				E719DE732A69893D00E2029F /* Assets.xcassets */,
 				E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */,
 				E719DE752A69893D00E2029F /* Preview Content */,
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7381E8B2A6EBD1B005008A7 /* MetronomeView.swift in Sources */,
 				E719DE722A69893D00E2029F /* ContentView.swift in Sources */,
 				E719DE702A69893D00E2029F /* MetronomeApp.swift in Sources */,
 			);
