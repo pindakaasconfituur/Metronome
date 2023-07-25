@@ -23,6 +23,7 @@
 		E719DE762A69893D00E2029F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trimmedmetronomesound.mp3; sourceTree = "<group>"; };
 		E7E65B222A704C3D005DDACC /* metronome_tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome_tick.wav; sourceTree = "<group>"; };
+		E7E65B262A7051BB005DDACC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		E719DE6E2A69893D00E2029F /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				E7E65B262A7051BB005DDACC /* README.md */,
 				E7E65B222A704C3D005DDACC /* metronome_tick.wav */,
 				E719DE6F2A69893D00E2029F /* MetronomeApp.swift */,
 				E719DE712A69893D00E2029F /* ContentView.swift */,
