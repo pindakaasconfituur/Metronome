@@ -1,48 +1,70 @@
-//
-//  MetronomeView.swift
-//  Metronome
-//
-//  Created by Cem Demirayak on 24/07/2023.
-//
-
 import SwiftUI
 import AVFoundation
 
 struct MetronomeView: View {
-    var bar: Int;
-    var tempo: Double;
-    var bombSoundEffect: AVAudioPlayer?
+    var tempo: Double
+    var metronomeTick: AVAudioPlayer?
+    var gauge: Int = 0;
     
-    init(bar: Int, tempo: Double) {
-        self.bar = bar
+    @State var timer: Timer?;
+
+    init(tempo: Double) {
         self.tempo = tempo
-        let path = Bundle.main.path(forResource: "test.wav", ofType:nil)!
+        let path = Bundle.main.path(forResource: "test.wav", ofType: nil)!
         let url = URL(fileURLWithPath: path)
-        
+
         do {
-            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
+            metronomeTick = try AVAudioPlayer(contentsOf: url)
+            metronomeTick?.prepareToPlay() // Preload the audio
         } catch {
-            // couldn't load file :(
+
         }
         
     }
     
-     
-    var body: some View {
-        Button("Make sound"){
-            _ =  Timer.scheduledTimer(withTimeInterval: 60/tempo, repeats: true) { timer in
-                print("Make sound")
-                bombSoundEffect?.stop();
-                bombSoundEffect?.play();
+    func playSound(){
+        self.timer = Timer.scheduledTimer(withTimeInterval: 60 / tempo, repeats: true) { _ in
+            DispatchQueue.global(qos: .userInteractive).async {
+                self.metronomeTick?.currentTime = 0 // Rewind to the beginning
+                self.metronomeTick?.play()
             }
-            
         }
+        // Invalidate the timer after desired number of bars (if needed)
+        self.timer?.tolerance = 0.01 // Adjust tolerance if necessary for better accuracy
+    }
+
+    var body: some View {
         
+        VStack{
+            NavigationStack{
+                HStack{
+                    Button("Make sound") {
+                        self.timer = Timer.scheduledTimer(withTimeInterval: 60 / tempo, repeats: true) { _ in
+                            DispatchQueue.global(qos: .userInteractive).async {
+                                self.metronomeTick?.currentTime = 0 // Rewind to the beginning
+                                self.metronomeTick?.play()
+                            }
+                        }
+                        // Invalidate the timer after desired number of bars (if needed)
+                        self.timer?.tolerance = 0.01 // Adjust tolerance if necessary for better accuracy
+                    }.buttonStyle(.borderedProminent)
+                        .tint(.green)
+                    Button("Stop"){
+                        self.timer?.invalidate();
+                        self.metronomeTick?.stop();
+                    }.buttonStyle(.borderedProminent)
+                        .tint(.red)
+                }
+                Spacer()
+                
+            }
+        }.padding(.all).background(Color(red: 207 / 255, green: 221 / 255, blue: 255 / 255))
     }
 }
 
 struct MetronomeView_Previews: PreviewProvider {
     static var previews: some View {
-        MetronomeView(bar: 2, tempo: 120)
+        MetronomeView(tempo: 120)
     }
 }
+

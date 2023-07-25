@@ -13,9 +13,7 @@
 		E719DE772A69893D00E2029F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E719DE762A69893D00E2029F /* Preview Assets.xcassets */; };
 		E7381E8B2A6EBD1B005008A7 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */; };
 		E7381E972A6ED8E3005008A7 /* trimmedmetronomesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */; };
-		E7381E992A6EDDDC005008A7 /* timmed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7381E982A6EDDDC005008A7 /* timmed.mp3 */; };
-		E7381E9B2A6EDFD4005008A7 /* trimmedshort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7381E9A2A6EDFD4005008A7 /* trimmedshort.mp3 */; };
-		E7381E9D2A6EE090005008A7 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7381E9C2A6EE090005008A7 /* test.wav */; };
+		E7E65B232A704C3D005DDACC /* metronome_tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7E65B222A704C3D005DDACC /* metronome_tick.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +24,7 @@
 		E719DE762A69893D00E2029F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
 		E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trimmedmetronomesound.mp3; sourceTree = "<group>"; };
-		E7381E982A6EDDDC005008A7 /* timmed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timmed.mp3; sourceTree = "<group>"; };
-		E7381E9A2A6EDFD4005008A7 /* trimmedshort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trimmedshort.mp3; sourceTree = "<group>"; };
-		E7381E9C2A6EE090005008A7 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		E7E65B222A704C3D005DDACC /* metronome_tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome_tick.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +57,9 @@
 		E719DE6E2A69893D00E2029F /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
-				E7381E9C2A6EE090005008A7 /* test.wav */,
+				E7E65B222A704C3D005DDACC /* metronome_tick.wav */,
 				E719DE6F2A69893D00E2029F /* MetronomeApp.swift */,
 				E719DE712A69893D00E2029F /* ContentView.swift */,
-				E7381E982A6EDDDC005008A7 /* timmed.mp3 */,
-				E7381E9A2A6EDFD4005008A7 /* trimmedshort.mp3 */,
 				E7381E8A2A6EBD1B005008A7 /* MetronomeView.swift */,
 				E719DE732A69893D00E2029F /* Assets.xcassets */,
 				E7381E962A6ED8E3005008A7 /* trimmedmetronomesound.mp3 */,
@@ -140,12 +134,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7381E9D2A6EE090005008A7 /* test.wav in Resources */,
-				E7381E992A6EDDDC005008A7 /* timmed.mp3 in Resources */,
 				E719DE772A69893D00E2029F /* Preview Assets.xcassets in Resources */,
-				E7381E9B2A6EDFD4005008A7 /* trimmedshort.mp3 in Resources */,
 				E7381E972A6ED8E3005008A7 /* trimmedmetronomesound.mp3 in Resources */,
 				E719DE742A69893D00E2029F /* Assets.xcassets in Resources */,
+				E7E65B232A704C3D005DDACC /* metronome_tick.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
